@@ -1,9 +1,11 @@
 :root {
     --bg:#050505;
     --card:#0d0d0d;
+    --emerald:#06c274;
     --emerald-light:#8fffd1;
     --text:#ffffff;
     --gray:#b8b8b8;
+    --bglogo: rgba(255, 255, 255, 0.486);
 }
 
 * {
@@ -25,6 +27,7 @@ body {
 }
 /* side menu */
 .sidemenu {
+    position: absolute;
     background: #070707;
     border-right: 1px solid rgba(255,255,255,.08);
     padding: 30px;
@@ -60,11 +63,18 @@ body {
 .profile p {
     color: var(--emerald-light);
 }
-
+/* the whole page */
+.menu {
+    position: relative;
+}
+/* navigation */
 nav {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    margin-top: 32px;
+    margin-right: 16px;
+    border-bottom: 1px solid var(--bglogo);
 }
 nav a {
     text-decoration: none;
@@ -75,14 +85,14 @@ nav a {
 }
 nav a:hover {
     background: rgba(0,208,132,.15);
-    color: var(--emerald-light);
+    color: var(--emerald);
 }
 
 .cv {
     width: 100%;
     margin-top: 30px;
     padding: 14px;
-    background: var(--emerald-light);
+    background: var(--emerald);
     color: black;
     border: none;border-radius: 12px;
     font-weight: 600;
@@ -99,6 +109,13 @@ nav a:hover {
     background: none;
 }
 
+/* paragraph */
+p {
+    line-height: 24px;
+    font-weight: 500;
+    font-size: large;
+}
+
 /* main */
 main {
     padding: 40px;
@@ -110,6 +127,9 @@ main {
     align-items: center;
     gap: 50px;
     margin-bottom: 40px;
+    background-image: url("./image/bghero.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .hi {
@@ -121,11 +141,11 @@ main {
 }
 
 .hero h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     max-width: 20px 0;
 }
-.hero h1 span {
-    color: var(--emerald-light);
+#name {
+    color: var(--emerald);
 }
 .hero h2 {
     color: #d9d9d9;
@@ -139,40 +159,146 @@ main {
 .hero-btn {
     display: flex;
     gap: 20px;
-    margin-top: 30px;
+    margin-top: 24px;
 }
-.view,
-.contact {
-    padding: 15px 30px;
+.btn {
+    padding: 12px 30px;
     border-radius: 12px;
     cursor: pointer;
     font-size: 1rem;
+    font-weight: bold;
+    font-size: large;
 }
 .view {
-    background: var(--emerald-light);
+    background: var(--emerald);
     color: black;
     border: none;
 }
 .contact {
     background: transparent;
-    border: 1px solid var(--emerald-light) ;
-    color: var(--emerald-light);
+    border: 1px solid var(--emerald) ;
+    color: white;
 }
 
 .status {
     display: flex;
     gap: 50px;
     margin-top: 40px;
+    color: white;
 }
 .status h3 {
-    color: var(--emerald-light);
-    font-size: 2rem;
+   /* color: var(--emerald);*/
+    font-size: 1.5rem;
 }
 .status p {
     color: #999;
 }
 
-.hero-img {
+/* .hero-image {
     width: 100%;
     filter: drop-shadow(0 0 30px rgba(0,208,132,.3));
+} */
+
+/* lower section */
+.lower-section {
+    background: #cff8e6;
+    color: black;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgb(255,255,255,.08);
+    border-radius: 24px;
+    /*padding: 30px;
+    margin-bottom: 30px;*/
+}
+
+.div-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+/* class name sec */
+.sec {
+    background: rgb(255,255,255,.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgb(255,255,255,.08);
+    border-radius: 24px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+.sec h2 {
+    color: black;
+    margin-bottom: 20px;
+}
+/* stroke */
+.stroke {
+    border: 2px solid var(--emerald);
+    margin-right: 24px;
+    border-radius: 8px;
+}
+
+.read-more {
+    background: transparent;
+    border: 1px solid var(--emerald) ;
+    color: var(--emerald);
+    margin-top: 24px;
+}
+
+.about, .skills {
+    background: #faf9f9a2;
+    padding: 24px;
+    margin: 24px 0;
+    margin-left: 20px;
+}
+/* skills */
+.skills {
+    background-color: #faf9f94d;
+}
+.skill-img {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.skill-logo img { 
+    width: 60px;
+    height: 50%;
+}
+.skill-logo {
+    background-color: var(--bglogo);
+    border-radius: 16px;
+    text-align: center;
+    padding: 8px 16px;
+}
+/* projects */
+.project-view {
+    display: flex;
+    justify-content: space-between;
+}
+
+.proj1 {
+    display: flex;
+}
+.proj2 {
+    display: flex;
+}
+
+/* tech & tools */
+.techtool {
+    display: flex;
+    gap: 1rem;
+}
+
+#tool-logo {
+    background-color: var(--bglogo); 
+    border-radius: 16px;
+    width: 100px;
+    height: 70%;
+    padding: 12px;
+}
+.tool-label {
+    text-align: center;
+}
+
+/* contact */
+#contact-logo {
+    width: 50px;
+    height: 50%;
 }
