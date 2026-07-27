@@ -27,59 +27,90 @@ body {
 }
 /* side menu */
 .sidemenu {
-    position: absolute;
+    /* position: absolute; */
     background: #070707;
     border-right: 1px solid rgba(255,255,255,.08);
-    padding: 30px;
+    border-radius: 24px;
+    padding-top: 16px;
+    padding: 0 30px;
     position: sticky;
     top: 0;
-    height: 100vh;
+    height: fit-content;
 }
 
 .logo {
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-bottom: 50px;
+    margin: 16px 0;
 }
 .logo h2 {
     color: var(--emerald-light);
 }
+.logo h3 {
+    border-bottom: 0.5px solid var(--emerald-light);
+}
 
 .profile {
     text-align: center;
-    margin-bottom: 40px;
+    padding-bottom: 16px;
+    line-height: 32px;
+    border-bottom: 1px solid var(--bglogo);
 }
-.profile img {
+#prof-img {
     width: 130px;
     height: 130px;
     border-radius: 50%;
     border: 3px solid var(--emerald-light);
     object-fit: cover;
 }
-.profile h3 {
-    margin-top: 15px;
-}
 .profile p {
     color: var(--emerald-light);
 }
-/* the whole page */
-.menu {
-    position: relative;
+
+.prof-logo {
+    display: flex;
+    gap: 1rem;
+    margin-top: 12px;
+    justify-content: center;
 }
+.prof-logo img {
+    width: 30px;
+    height: 30%;
+}
+#prof-logo {
+    background-color: #ddd;
+    padding: 4px;
+    border-radius: 8px;
+}
+
 /* navigation */
+.navigate {
+    border-bottom: 1px solid var(--bglogo);
+    padding: 16px 0;
+}
+
+.nav-logo {
+    display: flex;
+}
+.nav-logo img {
+    margin-right: 16px;
+    height: 75%;
+    width: 25px;
+    filter: brightness(0) invert(1); 
+}
+
 nav {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    margin-top: 32px;
+    margin-top: 8px;
     margin-right: 16px;
-    border-bottom: 1px solid var(--bglogo);
 }
 nav a {
     text-decoration: none;
     color: #ddd;
-    padding: 14px;
+    padding: 8px 16px;
     border-radius: 10px;
     transition: .3s;
 }
@@ -88,17 +119,51 @@ nav a:hover {
     color: var(--emerald);
 }
 
+.btn-nav {
+    background-color: var(--emerald);
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    margin-right: 16px;
+}
+
+.nav p {
+    margin-top: 12px;
+    font-weight: bolder;
+    font-size: xx-large;
+    color: white;
+}
+
 .cv {
     width: 100%;
-    margin-top: 30px;
+    margin-top: 16px;
     padding: 14px;
     background: var(--emerald);
     color: black;
-    border: none;border-radius: 12px;
+    border: none;
+    border-radius: 12px;
     font-weight: 600;
-    cursor: pointer;
+    /* cursor: pointer; */
+}
+.copyright {
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+.copyright p {
+    text-align: center;
+    font-weight: lighter;
+    font-size: small;
+    line-height: 24px;
+}
+#love {
+    color: var(--emerald);
+    font-size: large;
 }
 
+/* the whole page */
+.menu {
+    position: relative;
+}
 /* header */
 .nav {
     flex-direction: row;
@@ -117,17 +182,15 @@ p {
 }
 
 /* main */
-main {
-    padding: 40px;
-}
-
 .hero {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
     align-items: center;
-    gap: 50px;
-    margin-bottom: 40px;
-    background-image: url("./image/bghero.png");
+    /* gap: 50px; */
+    padding-bottom: 24px;
+    padding-left: 40px;
+    background: 
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url("./image/bghero.png"); 
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -205,15 +268,15 @@ main {
     color: black;
     backdrop-filter: blur(10px);
     border: 1px solid rgb(255,255,255,.08);
-    border-radius: 24px;
-    /*padding: 30px;
-    margin-bottom: 30px;*/
+    border-radius: 24px; 
+    padding: 16px;
 }
 
 .div-section {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    gap: 0.5rem;
 }
 /* class name sec */
 .sec {
@@ -221,12 +284,15 @@ main {
     backdrop-filter: blur(10px);
     border: 1px solid rgb(255,255,255,.08);
     border-radius: 24px;
-    padding: 30px;
-    margin-bottom: 30px;
+    padding: 24px;
+    margin-bottom: 16px;
 }
 .sec h2 {
     color: black;
     margin-bottom: 20px;
+}
+.journey p, .about p, .contact2 p {
+    line-height: 32px;
 }
 /* stroke */
 .stroke {
@@ -259,29 +325,74 @@ main {
 
 .skill-logo img { 
     width: 60px;
-    height: 50%;
+    height: 60%;
 }
 .skill-logo {
     background-color: var(--bglogo);
     border-radius: 16px;
     text-align: center;
-    padding: 8px 16px;
+    padding: 16px 12px;
+}
+
+#skill-logo {
+    background-color: #06c2742d; 
+    border-radius: 16px;
+    width: 100px;
+    height: 50%; 
+    padding: 12px 16px;
+    margin-top: 16px;
+}
+.skill-label {
+    text-align: center;
 }
 /* projects */
 .project-view {
     display: flex;
     justify-content: space-between;
 }
-
-.proj1 {
-    display: flex;
-}
-.proj2 {
-    display: flex;
+.project-view a {
+    color: var(--emerald);
+    text-decoration: none;
+    margin-right: 24px;
 }
 
-/* tech & tools */
-.techtool {
+.proj1, .proj2 {
+    display: flex;
+    gap: 1.5rem;
+}
+
+#game {
+    color: black;
+    line-height: 24px;
+    font-weight: 600;
+    font-size: large;
+}
+.proj-img p {
+    text-align: center;
+    color: var(--emerald)
+}
+.proj-img img {
+    height: 70%;
+    width: 250px;
+    border-radius: 16px;
+}
+.proj2 img {
+    height: 130%;
+    width: 250px;
+    border-radius: 16px;
+    margin-top: -24px;
+}
+
+/* tech & tools and learning journey*/
+.sec.project, .sec.journey {
+    border-right: 2px solid var(--bglogo);
+}
+
+.sec.journey img {
+    margin-top: 24px;
+}
+
+.techtool, .skill-img2 {
     display: flex;
     gap: 1rem;
 }
@@ -298,7 +409,52 @@ main {
 }
 
 /* contact */
-#contact-logo {
-    width: 50px;
-    height: 50%;
+.sec.contact2 p {
+    text-align: center;
+    margin-bottom: 24px;
 }
+
+#contact-logo {
+    width: 25px;
+    height: 25%;
+}
+
+.cont {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 20px;
+}
+.cont a {
+    text-decoration: none;
+    color: var(--emerald);
+    margin-top: 8px;
+}
+/* Footer */
+footer {
+    margin-left: 24px;
+}
+
+footer p {
+    font-size: small;
+    font-weight: lighter;
+    line-height: 40px;
+}
+
+.foot-link a {
+    text-decoration: none;
+    color: black;
+    font-size: small;
+    font-weight: lighter;
+    line-height: 40px;
+    margin-right: 16px;
+}
+
+#foot-span {
+    border: 1px solid var(--emerald);
+    border-radius: 8px;
+    margin-right: 8px;
+}
+
+
+
+

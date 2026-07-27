@@ -1,0 +1,102 @@
+:root {
+    --bg:#050505;
+    --card:#0d0d0d;
+    --emerald:#06c274;
+    --emerald-light:#8fffd1;
+    --text:#ffffff;
+    --gray:#b8b8b8;
+    --bglogo: rgba(255, 255, 255, 0.486);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter',sans-serif;
+}
+
+.menu {
+background: 
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url("../image/bghero.png"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sec {
+    background: transparent;
+    backdrop-filter: none;
+    border: 1px solid var(--bglogo);
+    border-radius: 24px;
+    padding: 40px;
+    margin-top: 24px;
+}
+
+.project-view h2 {
+    color: var(--emerald);
+    /* color: #ffffff; */
+}
+
+.project-view {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.proj1, .proj2 {
+    display: flex;
+    gap: 2rem;
+}
+.proj1 {
+    margin-bottom: 40px;
+}
+
+.proj-img {
+    margin: 24px 0;
+}
+
+#proj-img1 img {
+    height: 50%;
+}
+
+.proj-img h3 {
+    font-weight: bold;
+    margin-top: 20px;
+}
+.proj-img p {
+    text-align: left;
+    color: white;
+    font-weight: lighter;
+    font-size: medium;
+    margin-top: 8px;
+}
+.proj-link {
+    display: flex;
+    gap: 1rem;
+}
+.proj-link a {
+    text-decoration: none;
+    color: var(--emerald);
+    background-color:  #06c2741f;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-weight: bolder;
+    font-size: small;
+    margin-top: 16px;
+}
+
+.proj-cont {
+    background-color: rgba(0, 0, 0, 0.582);
+    border: 1px solid rgb(29, 28, 28);
+    border-radius: 8px;
+    margin-top: -24px;
+    padding: 16px;
+}
+
+.proj2 {
+    margin-top: 8px;
+}
+
+.proj-img img {
+    height: 40%;
+    width: 300px;
+    border-radius: 16px;
+}

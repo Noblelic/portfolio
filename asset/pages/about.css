@@ -1,0 +1,36 @@
+:root {
+    --bg:#050505;
+    --card:#0d0d0d;
+    --emerald:#06c274;
+    --emerald-light:#8fffd1;
+    --text:#ffffff;
+    --gray:#b8b8b8;
+    --bglogo: rgba(255, 255, 255, 0.486);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter',sans-serif;
+}
+
+.menu {
+background: 
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url("../image/bghero.png"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about {
+    background-color: transparent;
+}
+
+.about h2 {
+    color: var(--emerald);
+}
+
+.about-info {
+  white-space: pre-line;
+}
+    

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="./asset/style.css">
 </head>
 <body>
@@ -13,39 +13,84 @@
         <aside class="sidemenu">
             <div class="logo">
                 <h2>&lt;/&gt;</h2>
-                <span>Web Enthusiast</span>
+                <h3>Web Enthusiast</h3>
             </div>
 
             <div class="profile">
-                <img src="/./asset/image/profile.jpg" alt="profile image">
+                <img src="/./asset/image/profile.jpg" alt="profile image" id="prof-img">
                 <h3>Yusuf Hameedat T</h3>
                 <p>Frontend Developer</p>
+                <div class="prof-logo">
+                    <img src="https://cdn-icons-png.flaticon.com/128/270/270798.png" 
+                    alt="github" id="prof-logo">
+                    <img src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png" 
+                    alt="linkedin" id="prof-logo">
+                    <img src="https://cdn-icons-png.flaticon.com/128/732/732200.png" 
+                    alt="mail" id="prof-logo">
+                    <img src="https://cdn-icons-png.flaticon.com/128/11531/11531327.png" 
+                    alt="social network" id="prof-logo">
+                </div>
             </div>
 
-            <nav>
-                <a href="">Home</a>
-                <a href="">About me</a>
-                <a href="">Skills</a>
-                <a href="">Projects</a>
-                <a href="">Learning</a>
-                <a href="">Certifications</a>
-                <a href="">Contact</a>
-            </nav>
+            <div class="navigate">
+                <nav>
+                    <div class="nav-logo">
+                        <a href="/././index.html">
+                        <img src="https://cdn-icons-png.flaticon.com/128/1946/1946488.png" alt="">
+                        <!-- <img src="https://cdn-icons-png.flaticon.com/128/5996/5996362.png" alt=""> -->
+                        Home</a>
+                    </div>
+                    <div class="nav-logo">
+                        <a href="#about">
+                        <img src="https://cdn-icons-png.flaticon.com/128/10758/10758751.png" alt="">
+                        About me</a>
+                    </div>
+                    <div class="nav-logo">
+                        <a href="#skill">
+                        <img src="https://cdn-icons-png.flaticon.com/128/1447/1447744.png" alt="">
+                        Skills</a>
+                    </div>
+                    <div class="nav-logo">
+                        <a href="#profect">
+                        <img src="https://cdn-icons-png.flaticon.com/128/10216/10216292.png" alt="">
+                        Projects</a>
+                    </div>
+                    <div class="nav-logo">
+                        <a href="#learn">
+                        <img src="https://cdn-icons-png.flaticon.com/128/864/864685.png" alt="">
+                        Learning</a>
+                    </div>
+                    <div class="nav-logo">
+                        <a href="#">
+                        <img src="https://cdn-icons-png.flaticon.com/128/3172/3172183.png" alt="">
+                        Certifications</a>
+                    </div>
+                    <div class="nav-logo">
+                        <a href="#contact">
+                        <img src="https://cdn-icons-png.flaticon.com/128/3894/3894024.png" alt="">
+                        Contact</a>
+                    </div>
+                </nav>
+                <button class="btn cv">Download CV</button>
+            </div>
 
-            <button class="btn cv">Download CV</button>
+            <div class="copyright">
+                <p>&copy; 2026 Yusuf Hameedat T</p>
+                <p>Built with <span id="love">&hearts;</span> and Code</p>
+            </div>
         </aside>
 
         <aside class="menu">
         <header>
             <nav class="nav">
-                <a href="">Home</a>
-                <a href="">About</a>
-                <a href="">Skills</a>
-                <a href="">Projects</a>
-                <a href="">Learning</a>
-                <a href="">Certifications</a>
-                <a href="">Contact</a>
-                <a href="">🌙</a>
+                <a href="/././index.html">Home</a>
+                <a href="#about">About</a>
+                <a href="#skill">Skills</a>
+                <a href="#project">Projects</a>
+                <a href="#learn">Learning</a>
+                <a href="#">Certifications</a>
+                <a href="#contact">Contact</a>
+                <button class="btn-nav">Download CV</button>
             </nav>
         </header>
 
@@ -56,19 +101,19 @@
                     <h1>Yusuf</h1>
                     <h1>Hameedat <span id="name">Taiwo</span></h1>
                     <h2>Frontend  Web Developer <span id="name">| Web Enthusiast</span></h2>
-                    <p>I have great passion in using <span id="name">HTML,CSS, and JavaScript
-                        </span>to create interactive, user-friendly, and responsive web apps. 
-                        I adore transforming ideas into useful websites and always improve my 
-                        abilities through studying and real-world projects.
+                    <p>Welcome to my portfolio website! I have great passion in using <span id="name">
+                        HTML,CSS, and JavaScript </span>to create interactive, user-friendly,<br> and 
+                        responsive web apps. I adore transforming ideas into <br>useful websites and 
+                        always improve my abilities through <br>studying and real-world projects.
                     </p>
 
                     <div class="hero-btn">
-                        <button class="btn view" >View My Projects 
-                            <img src="/./asset/image/right-arrow.png" alt="arrow icon"
-                            height="16px" width="16px"></button>
+                        <button id="viewBtn" class="btn view">View My Projects 
+                            <img src="https://cdn-icons-png.flaticon.com/128/271/271226.png" 
+                            alt="arrow icon" height="30%" width="20px"></button>
                         <button class="btn contact">Contact Me
-                            <img src="/./asset/image/telegram.png" alt="telegram icon"
-                            height="16px" width="16px"></button>
+                            <img src="https://cdn-icons-png.flaticon.com/128/15458/15458587.png" 
+                            alt="telegram icon" height="60%" width="30px"></button>
                     </div>
 
                     <div class="status">
@@ -88,130 +133,182 @@
                         </div>
                     </div>
                 </div>
-
             </section>
 <!-- lower section -->
           <div class="lower-section">
 <!-- about -->
             <div class="div-section">
-                <section class="sec about"> 
+                <section class="sec about" id="about"> 
                     <h2><span class="stroke"></span>About Me</h2>
-                    <p class="about-info">My journey into web development began with a curiosity about 
-                        how websites work. Since then, i have developed a strong foundation
-                    in HTML, CSS, and Javascript, enabling me to create responsive and 
-                    interactive web applications. </p>
+                    <p>My journey into web development began with a curiosity <br>about 
+                        how websites work.<br> Since then, i have developed a strong foundation
+                        in HTML, CSS, and Javascript, enabling me to create responsive and 
+                        interactive web applications.</p>
                     <button class="btn read-more">Read More</button>
                 </section>
 <!-- skill -->
-                <section class="sec skills">
+                <section class="sec skills" id="skill">
                     <h2><span class="stroke"></span>Skills</h2>
 
                     <div class="skill">
                         <div class="skill-img">
                             <div class="skill-logo">
                                 <p><img src="https://cdn-icons-png.flaticon.com/128/1051/1051277.png" 
-                                    alt="">HTML5</p>
+                                    alt="HTML5 logo">HTML5</p>
                             </div>
                             <div class="skill-logo">
                                 <p><img src="https://cdn-icons-png.flaticon.com/128/732/732190.png" 
-                                    alt="">CSS3</p>
+                                    alt="CSS3 logo">CSS3</p>
                             </div>
                             <div class="skill-logo">
                                 <p><img src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png" 
-                                    alt="">JavaScrript</p>
+                                    alt="JS logo">JavaScrript</p>
                             </div>
                         </div>
-                        <div>Flexbox</div>
-                        <div>CSS Grid</div>
-                        <div>Responsive Design</div>
-                        <div>Dom Manipulation</div>
-                        <div>API Integration</div>
-                    </div>
+                        <div class="skill-img2">
+                            <div class="skill-label">
+                                <p><img src="/./asset/image/responsive.png" 
+                                    alt="Resp design logo" id="skill-logo">Responsive Design</p>
+                            </div>
+                            <div class="skill-label">
+                                <p><img src="/./asset/image/dom.png" alt="Dom logo" id="skill-logo" 
+                                    >Dom Manipulation</p>
+                            </div>
+                            <div class="skill-label">
+                                <p><img src="/./asset/image/storage.png" 
+                                    alt="storage logo" id="skill-logo">Local Storage</p>
+                            </div>
+                            <div class="skill-label">
+                                <p><img src="/./asset/image/api.png" 
+                                    alt="API logo" id="skill-logo">API Integration</p>
+                            </div>
+                        </div>
                 </section>
+
+            </div> 
 <!-- projects -->
-                <section class="sec project">
+            <div class="div-section">
+
+                <section class="sec project" id="project">
                     <div class="project-view">
                         <h2><span class="stroke"></span>Projects</h2>
-                        <a href="#">View All</a>
+                        <a href="/./asset/pages/project.html">View All</a>
                     </div>
 
                     <div class="projects">
                         <div class="proj1">
-                            <div>
-                                <h3>Portfoloi Website</h3>
-                                <p>Responsive portfolio showcasing skills, projects and
-                                    contact information.</p>
+                            <div class="proj-img">
+                                <img src="/./asset/image/myPortfolio.png" alt="">
+                                <p>Portfoloi Website</p>
                             </div>
-                            <div>
-                                <h3>To-Do Apps</h3>
-                                <p>Task management application with local storage that allow
-                                    users to add, edit, delete and track daily tasks.</p>
+                            <div class="proj-img">
+                                <img src="/./asset/image/to-do.jpg" alt="to-do interface">
+                                <p>To-Do Apps</p>
                             </div>
                         </div>
                         <div class="proj2">
-                            <div>
-                                <h3>Quiz App</h3>
-                                <p>Inreractive quiz with score tracking</p>
+                            <div class="proj-img">
+                                <img src="/./asset/image/quiz.png" alt="quiz app design">
+                                <p id="game">Quiz App</p>
                             </div>
-                            <div>
-                                <h3>Game App</h3>
-                                <p>Guessing game showcasing the highscore</p>
+                            <div class="proj-img">
+                                <img src="/./asset/image/game.png" alt="game design">
+                                <p id="game">Game App</p>
                             </div>
                         </div>
                     </div>
                 </section>
-            </div> 
-<!-- technology & tools -->
-            <div class="div-section">
-                <section class="sec tools">
-                    <h2><span class="stroke"></span>Technologies & Tools</h2>
-                        <div class="techtool">
-                            <div class="tool-label">
-                                <p><img src="https://cdn-icons-png.flaticon.com/128/15713/15713436.png" 
-                                alt="" id="tool-logo">Vs Code</p>
-                            </div>
-                            <div class="tool-label">
-                                <p><img src="https://images.seeklogo.com/logo-png/27/2/git-logo-png_seeklogo-273180.png" 
-                                alt="" id="tool-logo">Git</p>
-                            </div>
-                            <div class="tool-label">
-                                <p><img src="https://images.seeklogo.com/logo-png/27/2/github-logo-png_seeklogo-273183.png" 
-                                alt="" id="tool-logo">GitHub</p>
-                            </div>
-                            <div class="tool-label">
-                                <p><img src="https://images.seeklogo.com/logo-png/31/2/google-chrome-logo-png_seeklogo-314170.png" 
-                                alt="" id="tool-logo">Chrome DevTools</p>
-                            </div>
-                            <!-- <p>Figma</p> -->
-                        </div>
-                </section>
 <!-- learning journey -->
-                <section class="sec journey">
+                <section class="sec journey" id="learn">
                     <h2><span class="stroke"></span>Learning Journey</h2>
-                    <p>I am currently expanding my knowledge in: <br> My goal is to
-                        progress from frontend development into full-stack web development
-                        while maintaining strong user interface design skills.</p>
-                </section>
-<!-- contact -->
-                <section class="sec contact2">
-                    <h2><span class="stroke"></span>Get In Torch</h2>
-                    <p>I am open to interships, freelance opportunities, collaborations, 
-                        and networking with fellow developers.</p>
-                    <p><img src="https://image.shutterstock.com/image-photo/image-260nw-1038080110.jpg" 
-                        alt="" id="contact-logo">hameedatyusuf9@gmail.com</p>
-                    <p>+234 706 400 4008</p>
-                    <p><img src="https://images.seeklogo.com/logo-png/27/2/github-logo-png_seeklogo-273183.png" 
-                        alt="" id="contact-logo">GitHub:github.com/</p>
-                    <p>LinkedIn: linkedin.com/in/</p>
-                    <p>Location:Ibadan, Nigeria</p>
+                    <p>I am currently expanding my knowledge by working with <br>modern frontend
+                         technologies such as React & APIs, <br>Tailwind CSS, and version control tools like 
+                         Git and GitHub. <br>Learn the importance of writing clean, maintainable code 
+                         and building applications that perform well accross different devices and
+                          browsers.
+                    <p>My goal is to progress from frontend development into<br> full-stack web 
+                        development while maintaining strong user <br>interface design skills.</p>
+                    <img src="/./asset/image/learnjy.png" alt="image displays the learning journey" >
                 </section>
             </div>
+            <div class="div-section">
+<!-- technology & tools -->
+                <section class="sec tools">
+                    <h2><span class="stroke"></span>Technologies & Tools</h2>
+                    <div class="techtool">
+                        <div class="tool-label">
+                            <p><img src="https://cdn-icons-png.flaticon.com/128/15713/15713436.png" 
+                                alt="Vs code logo" id="tool-logo">Vs Code</p>
+                        </div>
+                        <div class="tool-label">
+                            <p><img src="https://images.seeklogo.com/logo-png/27/2/git-logo-png_seeklogo-273180.png" 
+                                alt="git logo" id="tool-logo">Git</p>
+                        </div>
+                        <div class="tool-label">
+                            <p><img src="https://images.seeklogo.com/logo-png/27/2/github-logo-png_seeklogo-273183.png" 
+                                alt="github logo" id="tool-logo">GitHub</p>
+                        </div>
+                        <div class="tool-label">
+                            <p><img src="https://images.seeklogo.com/logo-png/31/2/google-chrome-logo-png_seeklogo-314170.png" 
+                                alt="chrome dev logo" id="tool-logo">Chrome DevTools</p>
+                        </div>
+                             <!-- <p>Figma</p>  -->
+                    </div>
+                </section>
+<!-- contact -->
+                <section class="sec contact2" id="contact">
+                    <h2><span class="stroke"></span>Get In Torch</h2>
+                    <p>I am open to interships, freelance opportunities, collaborations, networking
+                         with fellow developers and general inquiries through email, phone or social media.</p>
+                    <div class="cont">
+                        <img src="https://cdn-icons-png.flaticon.com/128/646/646094.png" 
+                        alt="email logo" id="contact-logo">
+                        <a href="">hameedatyusuf9@gmail.com</a>
+                    </div>
+                    <div class="cont">
+                        <img src="https://cdn-icons-png.flaticon.com/128/13965/13965328.png" 
+                        alt="whatsapp" id="contact-logo">
+                        <a href="">+234 706 400 4008</a>
+                    </div>
+                    <div class="cont">
+                        <img src="https://images.seeklogo.com/logo-png/27/2/github-logo-png_seeklogo-273183.png" 
+                        alt="github logo" id="contact-logo">
+                        <a href="">GitHub:github.com/</a>
+                    </div>
+                    <div class="cont">
+                        <img src="https://cdn-icons-png.flaticon.com/128/3128/3128219.png" 
+                        alt="linkedin logo" id="contact-logo">
+                        <a href="">LinkedIn: linkedin.com/in/</a>
+                    </div>
+                    <div class="cont">
+                        <img src="https://cdn-icons-png.flaticon.com/128/2838/2838912.png" 
+                        alt="address logo" id="contact-logo">
+                        <a href="">Location:Ibadan, Nigeria</a>
+                    </div>
+                </section>
+            </div>
+            <footer>
+                <p>Yusuf Hameedat Taiwo</p>
+                <p>Web Enthusiast & Frontend Developer</p>
+                <p>I am available for freelance projects, collaborations, and full-time opportunities.</p>
+                <div class="foot-link">
+                    <a href="#">hello@gmail.com</a><span id="foot-span"></span>
+                    <a href="#">LinkedIn</a><span id="foot-span"></span>
+                    <a href="#">github</a><span id="foot-span"></span>
+                    <a href="#">Varcel</a><br>
+                    <a href="#">Home</a><span id="foot-span"></span>
+                    <a href="#">About</a><span id="foot-span"></span>
+                    <a href="#">Projects</a><span id="foot-span"></span>
+                    <a href="#">Contact</a>
+                </div>
+                <p>&copy; 2026 Yusuf Hameedat T. Designed and developed with care.</p>
+            </footer>
         </div>
            
         </main>
     </div>
         </aside>
-
+<!-- <img src="https://cdn-icons-png.flaticon.com/128/1659/1659067.png" alt=""> -->
         <script src="./asset/script.js"></script>
 </body>
 </html>
