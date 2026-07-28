@@ -24,6 +24,10 @@ background:
 
 .about {
     background-color: transparent;
+    padding-top: 40px;
+    padding-left: 40px;
+    margin-left: 60px;
+    margin-right: 60px;
 }
 
 .about h2 {
@@ -33,4 +37,18 @@ background:
 .about-info {
   white-space: pre-line;
 }
-    
+
+.pro {
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5rem;
+}
+
+#img-prof {
+    height: auto;
+    width: 120%;
+    border-radius: 50%;
+    border: 2px solid var(--emerald-light);
+    object-fit: cover;
+}
+
