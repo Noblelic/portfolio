@@ -26,8 +26,22 @@ contactBtn.addEventListener("click", function () {
 
 document.getElementById("cvBtn").addEventListener("click", () => {
     window.open("asset/CV/hameedatCV.pdf", "_blank");
+    console.log('im working');
 });
 
 document.getElementById("nav-cvBtn").addEventListener("click", () => {
+    window.open("asset/CV/hameedatCV.pdf", "_blank");
+    console.log('im working');
+});
+
+
+document.getElementById("Btncv").addEventListener("click", () => {
+    console.log('im working');
+    window.open("asset/CV/hameedatCV.pdf", "_blank");
+    
+});
+
+document.getElementById("nav-Btncv").addEventListener("click", () => {
+        console.log('im working');
     window.open("asset/CV/hameedatCV.pdf", "_blank");
 });
