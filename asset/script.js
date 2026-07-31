@@ -1,47 +1,25 @@
-'use strict'
-
-
-
+"use strict";
 
 const viewBtn = document.querySelector("#viewBtn");
-const aboutBtn = document.querySelector('.btn.read-more');
+const aboutBtn = document.querySelector(".btn.read-more");
 const contactBtn = document.querySelector("#contactBtn");
 
-
-
-
-
-
 aboutBtn.addEventListener("click", function () {
-    window.location.href = "/./asset/pages/about.html";
+  window.location.href = "/./asset/pages/about.html";
 });
 
 viewBtn.addEventListener("click", function () {
-    window.location.href = "/./asset/pages/project.html";
+  window.location.href = "/./asset/pages/project.html";
 });
 
 contactBtn.addEventListener("click", function () {
-    window.location.href = "https://t.me/@TaiwoKennyt";
+  window.location.href = "https://t.me/@TaiwoKennyt";
 });
 
 document.getElementById("cvBtn").addEventListener("click", () => {
-    window.open("asset/CV/hameedatCV.pdf", "_blank");
-    console.log('im working');
+  window.open("asset/CV/hameedatCV.pdf", "_blank");
 });
 
 document.getElementById("nav-cvBtn").addEventListener("click", () => {
-    window.open("asset/CV/hameedatCV.pdf", "_blank");
-    console.log('im working');
-});
-
-
-document.getElementById("Btncv").addEventListener("click", () => {
-    console.log('im working');
-    window.open("asset/CV/hameedatCV.pdf", "_blank");
-    
-});
-
-document.getElementById("nav-Btncv").addEventListener("click", () => {
-        console.log('im working');
-    window.open("asset/CV/hameedatCV.pdf", "_blank");
+  window.open("asset/CV/hameedatCV.pdf", "_blank");
 });
