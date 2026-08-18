@@ -904,6 +904,7 @@ p {
     /* padding-top: 16px; */
     padding: 0 30px;
     position: sticky;
+    width: 10rem;
     top: 0;
     height: fit-content;
   }
@@ -913,6 +914,10 @@ p {
 
   header {
     opacity: 0;
+  }
+  .lower-section{
+    width: 230px;
+    display: flex;
   }
 
   .container {
